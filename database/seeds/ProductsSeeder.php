@@ -19,8 +19,8 @@ class ProductsSeeder extends Seeder
         DB::table('products')->insert([
             'name'=>'Blusa',
             'precio'=>'55',
-            'descripcion'=>'color rojo '
+            'descripcion'=>'color rojo'
         ]);
-      
+      $products=factory(App\products::class,20)->create();
     }
 }

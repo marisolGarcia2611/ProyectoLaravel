@@ -21,6 +21,6 @@ class ComentsSeeder extends Seeder
         'product_id'=>App\products::all()->random()->id,
         'usuario_id'=>App\usuarios::all()->random()->id
         ]);
-      
+      $coments=factory(App\coments::class,20)->create();
     }
 }

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\usuarios;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers;
+
 
 class UsuariosController extends Controller
 {
@@ -17,6 +19,8 @@ class UsuariosController extends Controller
     {
         //
     }
+
+
 
     //ver todos los usuarios de la tabla con id
     public function vista($id=null)

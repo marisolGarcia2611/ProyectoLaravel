@@ -19,6 +19,6 @@ class UsuariosSeeder extends Seeder
             'name'=>'Linda_buenRostro'
             
         ]);
-      
+      $usuarios=factory(App\usuarios::class,20)->create();
     }
 }

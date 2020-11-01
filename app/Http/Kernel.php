@@ -63,5 +63,8 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'verica.edad'=> \App\Http\Middleware\verificarEdad::class,
+        'verica.identidad'=> \App\Http\Middleware\permisoAdmin::class,
+        'verica.identidad2'=> \App\Http\Middleware\permisoUser::class,
     ];
 }
